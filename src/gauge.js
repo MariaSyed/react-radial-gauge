@@ -135,7 +135,7 @@ class Gauge extends Component {
                 textAnchor="middle"
                 fill={opts.progressColor}
             >
-                {opts.currentValue}
+                {opts.label}
             </text>
         )
     };
@@ -197,6 +197,7 @@ Gauge.defaultProps = {
     tickInterval: 10,
 
     maximumValue: 100,
+    label: '25%',
     currentValue: 25,
     progressWidth: 5,
     progressColor: '#3d3d3d',
